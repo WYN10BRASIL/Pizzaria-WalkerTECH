@@ -1,0 +1,32 @@
++-------------------+          +-----------------------+
+|      Pizzaria     |          |        Cliente         |
++-------------------+          +-----------------------+
+| - imprimirCardapio() |        | - nome: String         |
+| - main()           |          | - endereco: String     |
++-------------------+          | - telefone: String     |
+                                +-----------------------+
+                                | + Cliente(nome,        |
+                                |           endereco,    |
+                                |           telefone)    |
+                                +-----------------------+
+
+          +-------+           +-----------+             +-------+
+          | Pizza |           |   Bebida  |             | Pedido|
+          +-------+           +-----------+             +-------+
+          | - sabor: String   | - nome: String           | - cliente: Cliente     |
+          | - preco: double   | - preco: double          | - pizza: Pizza         |
+          |                   |                          | - bebida: Bebida       |
+          |                   |                          | - formaPagamento: String|
+          |                   |                          |                        |
+          |                   |                          | + imprimirPedido()     |
+          +-------------------+                          +------------------------+
+          | + Pizza(sabor,    |                          | + Pedido(cliente: Cliente,|
+          |         preco)    |                          |          pizza: Pizza,  |
+          |                   |                          |          bebida: Bebida,|
+          | + getPreco()      |                          |          formaPagamento:|
+          |                   |                          |          String)        |
+          +-------------------+                          +------------------------+
+                                | + Bebida(nome,         |
+                                |          preco)        |
+                                | + getPreco()           |
+                                +-----------------------+
